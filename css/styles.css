@@ -1,0 +1,229 @@
+html, body {
+  height: 100%;
+}
+
+body {
+    background: #ffffff;
+    background-image: url("../img/triangles-background.png");
+    background-size: 500px;
+    background-position: 50% 0;
+}
+
+#darkmode-switch {
+  color: white;
+  position:absolute;
+  z-index: 300;
+  right:40px;
+  top:40px;
+}
+
+
+@keyframes appearFromUp {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes appearFromDown {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+#main {
+  color:white;
+}
+
+#title h1 {
+  animation-name: appearFromUp;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: .2s;
+}
+
+#title p {
+  animation-name: appearFromUp;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: .5s;
+}
+
+#main .img1 {
+  animation-name: appearFromDown;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1s;
+}
+
+#main .img2 {
+  animation-name: appearFromDown;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.2s;
+}
+
+#main .img3 {
+  animation-name: appearFromDown;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.4s;
+}
+
+#main .p1 {
+  animation-name: appearFromUp;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.5s;
+}
+
+#main .p2 {
+  animation-name: appearFromUp;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.7s;
+}
+
+#main .p3 {
+  animation-name: appearFromUp;
+  animation-duration: .5s;
+  animation-fill-mode: backwards;
+  animation-delay: 1.9s;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  color: #555; /* old IE */
+  background-color: #555; /* Modern Browsers */
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 19px;
+  margin: 3px;
+}
+
+@media (min-width: 768px) { 
+  h1 {
+    font-size: 50px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin: 5px;
+  }
+
+  .img {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+ }
+
+
+#title .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 
+#buttons .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.fill {
+  min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.img {
+  height: 75px;
+  width: 75px;
+  transition: .5s;
+}
+
+.img:hover {
+  -webkit-filter: drop-shadow(0px 0px 7px rgb(255, 255, 255));
+  filter:         drop-shadow(0px 0px 7px rgb(255, 255, 255)); 
+  
+}
+
+#content {
+  background: #ffffff;
+  background-image: url("../img/white-triangles-background.png");
+  background-size: 400px;
+  transition: .2s;
+}
+
+#mail a {
+  text-decoration: none;
+  color: white;
+  transition: .2s;
+}
+
+
+a {
+  text-decoration: none;
+  color: rgb(3, 129, 151);
+  transition: .2s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(95, 220, 241);
+}
+
+
+#mail a:hover {
+  text-decoration: none;
+  color: rgb(160, 238, 252);
+}
+
+
+
+
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
